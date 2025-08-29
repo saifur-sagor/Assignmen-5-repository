@@ -19,9 +19,7 @@
   <body>
     <!-- Header section  -->
     <header>
-      <div
-        class="w-[1200px] border-2 border-red mx-auto flex justify-between items-center"
-      >
+      <div class="md:w-[1200px] mx-auto flex justify-between items-center">
         <!-- right side -->
         <div class="flex items-center gap-2">
           <img src="assets/logo.png" class="w-10 h-10" />
@@ -54,7 +52,7 @@
     <main>
       <!-- banner section  -->
       <section
-        class="w-[1200px] mx-auto text-center bg-gradient-to-r from-[rgba(1,49,34,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)] text-white p-2"
+        class="md:w-[1200px] mx-auto text-center bg-gradient-to-r from-[rgba(1,49,34,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)] text-white p-2"
       >
         <div>
           <div class="flex justify-center items-center">
@@ -69,9 +67,9 @@
       </section>
       <!-- card section  -->
       <section
-        class="w-[1200px] mx-auto grid grid-cols-12 gap-3 bg-[#f5fff6] p-5"
+        class="md:w-[1200px] mx-auto grid grid-cols-12 gap-3 bg-[#f5fff6] p-5"
       >
-        <div class="right col-span-9 grid grid-cols-3">
+        <div class="col-span-9 grid grid-cols-3">
           <!-- first card -->
           <div class="w-[260px] h-[230px] bg-white p-4">
             <div class="flex justify-between items-center">
@@ -86,7 +84,10 @@
             <h1 class="text-xl font-bold mt-2">999</h1>
             <button class="bg-gray-100 rounded-full p-1">All</button>
             <div class="w-[190px] gap-2 flex justify-between items-center mt-4">
-              <button class="w-1/2 border border-1-gray-200 rounded-[8px]">
+              <button
+                id="copy-btn"
+                class="w-1/2 border border-1-gray-200 rounded-[8px]"
+              >
                 <i class="fa-solid fa-copy"></i> copy
               </button>
               <button

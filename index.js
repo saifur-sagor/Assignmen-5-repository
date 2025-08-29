@@ -21,16 +21,26 @@ for (const callBtn of callBtns) {
 
     // Alert
     alert(`Calling ${title} ${number}`);
+    // local time
+    const now = new Date();
+    const localTime = now.toLocaleTimeString();
     // cantainer call
     const callHistory = document.getElementById("history-container");
 
     const newHistory = document.createElement("div");
     newHistory.innerHTML = ` <div class="call-history">
-              <div class="bg-gray-100 rounded-[6px] p-2 mt-2 mb-2">
-                <h1 class="font-bold">${title}</h1>
-                <p>${number}</p>
-              </div>
-            </div>`;
+          <div
+            class="flex justify-between items-center bg-gray-100 rounded-[6px] p-2 mt-2 mb-2"
+          >
+            <div>
+              <h1 class="font-bold">${title}</h1>
+              <p>${number}</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">${localTime}</p>
+            </div>
+          </div>
+        </div>`;
     // append
     callHistory.append(newHistory);
   });
@@ -50,7 +60,5 @@ for (const heart of cardHearts) {
     let count = parseInt(headerHeart.innerText);
     count++;
     headerHeart.innerText = count;
-
-    // coin minus function
   });
 }
