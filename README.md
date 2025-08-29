@@ -1,33 +1,32 @@
+1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+
 getElementById vs getElementsByClassName vs querySelector / querySelectorAll
 
-getElementById → selects one element by its ID.
+getElementById → select one element by ID name.
 
-getElementsByClassName → selects all elements with a class (returns HTMLCollection).
+getElementsByClassName → selects all elements with a class name.
 
-querySelector → selects first matching element using any CSS selector.
+querySelector → select the first matching element using a css selector like (id,class tag).
 
-querySelectorAll → selects all matching elements using CSS selector (returns NodeList).
+querySelectorAll → select all matching elements using CSS selector.
 
-Create and insert a new element
+2. How do you Create and insert a new element in to the dom.
 
-Use document.createElement("tag") to make an element.
+Element create - document.createElement("tag")
 
 Use parent.appendChild(newElement) or parent.insertBefore(newElement, reference) to insert it.
 
-Event Bubbling
+3. Event Bubbling
 
 Event starts from the target element and bubbles up to its parent elements.
 
-Event Delegation
+4. Event Delegation
 
 Attach a single event listener on a parent instead of multiple children.
 
-Useful for dynamic elements added later.
 
-preventDefault() vs stopPropagation()
+5. preventDefault() vs stopPropagation()
 
 preventDefault() → stops the default browser action (like form submit).
 
 stopPropagation() → stops the event from bubbling to parent elements.
-
-If you want, I can also make a super short 1-line version for each so it’s easier to memorize. Do you want me to do that?
